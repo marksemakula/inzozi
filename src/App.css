@@ -636,63 +636,6 @@ body {
 
 /* Coming Soon Section */
 .coming-soon-section {
-  min-height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--background-light);
-  padding: 4rem 0;
-}
-
-.coming-soon-container {
-  text-align: center;
-}
-
-@font-face {
-  font-family: 'Arthelo';
-  src: url('/fonts/Arthelo.woff2') format('woff2'),
-       url('/fonts/Arthelo.woff') format('woff'),
-       url('/fonts/Arthelo.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-.coming-soon-text {
-  font-family: 'Arthelo', 'Inter', 'Segoe UI', Arial, sans-serif;
-  font-size: 4rem;
-  color: var(--primary-color);
-  font-weight: 700;
-  letter-spacing: 2px;
-  animation: fadeInUp 1s ease-out;
-}
-
-/* Animation for coming soon text */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive design for coming soon section */
-@media (max-width: 768px) {
-  .coming-soon-text {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .coming-soon-text {
-    font-size: 2.5rem;
-  }
-}
-
-.coming-soon-section {
   padding: 8rem 0;
   background: var(--background-white);
   display: flex;
@@ -705,6 +648,7 @@ body {
   text-align: center;
 }
 
+/* Arthelo Font */
 @font-face {
   font-family: 'Arthelo';
   src: url('/ArtheloBrush.otf') format('opentype');
@@ -712,13 +656,59 @@ body {
   font-style: normal;
 }
 
+.making-changes-text {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
 .coming-soon-text {
   font-family: 'Arthelo', cursive;
   font-size: 6rem;
   color: var(--primary-color);
-  margin: 0;
+  margin: 0 0 4rem 0;
   line-height: 1;
   letter-spacing: 2px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--background-light);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  background: var(--primary-color);
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover img {
+  filter: grayscale(0%) brightness(0) invert(1);
 }
 
 /* Responsive adjustments for Coming Soon section */
@@ -726,10 +716,46 @@ body {
   .coming-soon-text {
     font-size: 4rem;
   }
+  
+  .making-changes-text {
+    font-size: 1.3rem;
+  }
+  
+  .social-icons {
+    gap: 1.5rem;
+  }
+  
+  .social-icon {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .social-icon img {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media (max-width: 480px) {
   .coming-soon-text {
     font-size: 3rem;
+  }
+  
+  .making-changes-text {
+    font-size: 1.1rem;
+  }
+  
+  .social-icons {
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-icon img {
+    width: 18px;
+    height: 18px;
   }
 }

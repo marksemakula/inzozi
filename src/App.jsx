@@ -107,7 +107,34 @@ function App() {
       <section id="coming-soon" className="coming-soon-section">
         <div className="container">
           <div className="coming-soon-content">
+            <p className="making-changes-text">We are making some changes</p>
             <h2 className="coming-soon-text">Coming Soon</h2>
+            <div className="social-icons">
+              <a href="#" className="social-icon">
+                <img src="/icons/discord.svg" alt="Discord" />
+              </a>
+              <a href="#" className="social-icon">
+                <img src="/icons/instagram.svg" alt="Instagram" />
+              </a>
+              <a href="#" className="social-icon">
+                <img src="/icons/linkedin.svg" alt="LinkedIn" />
+              </a>
+              <a href="#" className="social-icon">
+                <img src="/icons/slack.svg" alt="Slack" />
+              </a>
+              <a href="#" className="social-icon">
+                <img src="/icons/youtube.svg" alt="YouTube" />
+              </a>
+              <a href="#" className="social-icon">
+                <img src="/icons/x.svg" alt="X" />
+              </a>
+              <a href="#" className="social-icon">
+                <img src="/icons/whatsapp.svg" alt="WhatsApp" />
+              </a>
+              <a href="#" className="social-icon">
+                <img src="/icons/telegram.svg" alt="Telegram" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
